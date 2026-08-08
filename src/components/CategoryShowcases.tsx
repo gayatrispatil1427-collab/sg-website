@@ -5,10 +5,10 @@ import type { NavigationPage } from '../types';
 
 interface CategoryShowcasesProps {
   onNavigate: (page: NavigationPage) => void;
-  onOpenBooking: () => void;
 }
 
-export const CategoryShowcases = ({ onNavigate, onOpenBooking }: CategoryShowcasesProps) => {
+
+export const CategoryShowcases = ({ onNavigate }: CategoryShowcasesProps) => {
   return (
     <section className="py-24 bg-[#FAF8F5] text-[#1C1B18] space-y-20">
       

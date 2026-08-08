@@ -5,8 +5,8 @@ import type { NavigationPage } from '../types';
 
 interface SpecializationsGridProps {
   onNavigate: (page: NavigationPage) => void;
-  onOpenBooking: () => void;
 }
+
 
 const ICON_MAP: Record<string, any> = {
   Camera,
@@ -23,7 +23,7 @@ const ICON_MAP: Record<string, any> = {
   Zap
 };
 
-export const SpecializationsGrid = ({ onNavigate, onOpenBooking }: SpecializationsGridProps) => {
+export const SpecializationsGrid = ({ onNavigate }: SpecializationsGridProps) => {
   return (
     <section className="py-24 bg-[#FAF8F5] text-[#1C1B18]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 space-y-16 text-left">

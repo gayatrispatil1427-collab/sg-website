@@ -4,10 +4,10 @@ import type { NavigationPage } from '../types';
 
 interface WeddingPreWeddingShowcaseProps {
   onNavigate: (page: NavigationPage) => void;
-  onOpenBooking: () => void;
+
 }
 
-export const WeddingPreWeddingShowcase = ({ onNavigate, onOpenBooking }: WeddingPreWeddingShowcaseProps) => {
+export const WeddingPreWeddingShowcase = ({ onNavigate }: WeddingPreWeddingShowcaseProps) => {
   return (
     <section className="py-24 bg-[#1C1B18] text-[#FAF8F5] relative overflow-hidden">
 

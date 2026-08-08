@@ -1,7 +1,6 @@
 import { useState, type FormEvent } from 'react';
-import { X, CheckCircle2, Send, Sparkles } from 'lucide-react';
+import { X, CheckCircle2, Send } from 'lucide-react';
 import confetti from 'canvas-confetti';
-
 interface BookingModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -22,7 +21,7 @@ export const BookingModal = ({ isOpen, onClose, initialService = 'Editorial Port
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitted(true);
-    
+
     // Launch celebratory luxury confetti
     confetti({
       particleCount: 80,
@@ -39,7 +38,7 @@ export const BookingModal = ({ isOpen, onClose, initialService = 'Editorial Port
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/60 backdrop-blur-md transition-all duration-300">
-      <div 
+      <div
         className="relative w-full max-w-2xl bg-[#FAF8F5] border border-[#E5E0D8] rounded-2xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col animate-in fade-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
@@ -49,7 +48,7 @@ export const BookingModal = ({ isOpen, onClose, initialService = 'Editorial Port
             <span className="text-xs uppercase tracking-[0.25em] text-[#C5A880] font-semibold">Private Inquiry</span>
             <h3 className="text-2xl font-serif-luxury text-[#1C1B18]">Reserve Studio Session</h3>
           </div>
-          <button 
+          <button
             onClick={onClose}
             className="p-2 rounded-full text-[#1C1B18]/60 hover:text-[#1C1B18] hover:bg-[#EAE6DF]/60 transition-colors"
           >

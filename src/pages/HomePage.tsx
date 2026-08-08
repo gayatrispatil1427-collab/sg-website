@@ -23,10 +23,10 @@ export const HomePage = ({ onNavigate, onOpenBooking, onSelectItem }: HomePagePr
       <Hero onNavigate={onNavigate} onOpenBooking={onOpenBooking} />
 
       {/* 3. Featured Photography Categories (All 12 Specializations) */}
-      <SpecializationsGrid onNavigate={onNavigate} onOpenBooking={onOpenBooking} />
+     <SpecializationsGrid onNavigate={onNavigate} />
 
       {/* 4. Wedding & Pre-Wedding Showcase */}
-      <WeddingPreWeddingShowcase onNavigate={onNavigate} onOpenBooking={onOpenBooking} />
+      <WeddingPreWeddingShowcase onNavigate={onNavigate} />
 
       {/* 5. Cinematic Films Preview (Video Section) */}
       <VideoGallery />
